@@ -11,6 +11,8 @@ terraform {
   }
 
   backend "s3" {
+    bucket = "testing-tf-cloud-bucket"
+    key = "terraform.tfstate"
     endpoints = {
       s3 = "http://storage.yandexcloud.net"
     }
